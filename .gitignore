@@ -3,3 +3,4 @@
 .idea/
 progress/
 node_modules/
+*.log
