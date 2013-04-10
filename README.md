@@ -40,3 +40,29 @@ $ npm run-script watch
 ```
 
 This will run the Jade compiler and watch for changes to any Jade files under `templates/presentations/`
+
+### Compiling SASS
+
+If you want to make changes to any of the SASS themes, you can run the SASS watcher from the command line:
+
+```
+$ npm run-script sass
+```
+
+This will look for any changes made to SASS files under `deckjs/themes/style/` and automatically compile them to CSS.
+
+## Publishing
+
+To publish your presentation, checkout the `gh-pages` branch, merge from master and push:
+
+```
+$ git checkout master
+$ git pull
+..... write your stuff .....
+$ git add path/to/your/presentation
+$ git commit -m 'your commit message'
+$ git push origin master
+$ git checkout gh-pages
+$ git merge master
+$ git push origin gh-pages
+```
