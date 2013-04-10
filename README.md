@@ -19,10 +19,24 @@ Presentations are based on Deck.js and can be written with Jade (preferred) or a
 ## Directory Structure
 
 ```
-/ - Root directoy containing compiled presentation HTML files
-/assets - any static assets contained in your presentation
-/deckjs - the Deck.js dependencies
-/templates - Jade templates
- -- /presentations - Your Jade presentation template goes here
- layout.jade - Layout file for all presentations
+/                    - Root directoy containing compiled presentation HTML files
+/assets              - Static assets contained in your presentation go here
+/deckjs              - Deck.js dependencies
+/templates           - Jade templates
+ - /presentations    - Your Jade presentation template goes here
+ - layout.jade       - Layout file for all presentations
 ```
+
+## Writing Your Presentation (Jade)
+
+* Copy `templates/example.jade` to `templates/presentations/your_presentation.jade`
+* Change title in title block
+* Start adding slides in slides block
+
+To compile your Jade presentation file into HTML run the following:
+
+```
+$ npm run-script watch
+```
+
+This will run the Jade compiler and watch for changes to any Jade files under `templates/presentations/`
