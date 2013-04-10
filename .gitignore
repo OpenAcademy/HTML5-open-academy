@@ -2,3 +2,4 @@
 .sass-cache/
 .idea/
 progress/
+node_modules/
