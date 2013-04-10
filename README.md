@@ -66,3 +66,5 @@ $ git checkout gh-pages
 $ git merge master
 $ git push origin gh-pages
 ```
+
+Please make sure you add a link to your presentation in `templates/presentations/index.jade`
