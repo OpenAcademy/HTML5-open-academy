@@ -1,6 +1,164 @@
 extends ../layout
 
+block title
+  title Web &amp; Markup Introduction | HTML5 Open Academy
+
 block slides
-  section.slide#title
+  section.slide
     h1 Welcome
       .subtitle HTML5 Open Academy
+
+  section.slide
+    h1 Zohar Arad
+      .subtitle Front-End &amp; Web Developer
+      .subtitle.small
+        a(href="http://www.zohararad.com", target="_blank") www.zohararad.com
+        br
+        @zohararad
+
+
+  section.slide
+    h2 We're going to talk about
+    ul
+      li.slide
+        | Some basic definitions
+      li.slide
+        | Servers &amp; Clients
+      li.slide
+        | HTTP Request / Response
+      li.slide
+        | The Browser
+      li.slide
+        | Markup Languages
+
+  section.slide
+    h2 Web Jargon
+    dl
+      dt.slide
+        | The Internet
+      dd
+        | Global computer network - Communication infrastructure
+      dt.slide
+        | The World Wide Web
+      dd
+        | The part of the Internet that works over HTTP
+      dt.slide
+        | HTTP
+      dd
+        | Information transfer protocol for the Web (works over the Internet)
+      dt.slide
+        | Server
+      dd
+        | A computer program that exposes a unique service over a network
+      dt.slide
+        | Client
+      dd
+        | A computer program that consumes a unique service over a network
+
+  section.slide
+    h2 Servers &amp; Clients
+    .block
+      p A server is simply a computer program that provides an information service over a computer network.
+
+  section.slide
+    h2 Servers &amp; Clients
+    .block
+      p A Web server is a computer program that transmits the contents of text and media files over the network using HTTP.
+
+  section.slide
+    h2 Servers &amp; Clients
+    .block
+      p
+        |A Web client is a computer program that can receive (and display)
+        |  the contents of text and media files over the network using HTTP.
+
+  section.slide
+    h2 HTTP life-cycle
+    figure
+      img(src="assets/images/web-markup-intro/http-req-res.png")
+
+  section.slide
+    h2 Recap
+    h3 Consuming information over the wire
+    ul
+      li.slide
+        |Internet - The Infrastructure
+      li.slide
+        |HTTP - The Language / Method
+      li.slide
+        |Web - The Medium
+      li.slide
+        |Server - Stores and serves information
+      li.slide
+        |Client - Retrieves information for consumption
+      li.slide
+        |Text (HTML), Images, Video, Audio - The Media (Information)
+
+  section.slide
+    h2 Why is this important?
+    figure
+      img(src="assets/images/web-markup-intro/darth-vader.png")
+      figcaption
+        | Source: http://www.graphicshunt.com/
+
+  section.slide
+    h1
+      .subtitle This is what makes the Web work!
+
+  section.slide
+    h1 Breath Deep
+
+  section.slide
+    h1
+      .subtitle Say hello to the
+      |Browser
+
+  section.slide
+    h2 The Browser
+    ul
+      li.slide Is an HTTP Client
+      li.slide Talks to Web Servers (HTTP, Remember?)
+      li.slide Can display HTML, Images, Video, Audio, Animation
+      li.slide Allows us to consume information over the wire in a platform-independent manner
+
+  section.slide
+    h2 Platform Independence...
+    figure
+      img(src="assets/images/web-markup-intro/homer-with-ipad.jpg")
+      figcaption Source http://ca.news.yahoo.com/blogs/author/marc-saltzman/
+
+  section.slide
+    h1 Markup
+      .subtitle Achieving platform-independence
+
+  section.slide
+    h2 Markup
+    .block
+      |Separate content from design.
+    .block
+      |Give content structure and meaning.
+    .block
+      |Let clients decide how to display.
+
+  section.slide
+    h2 Markup
+    .block
+      p Markup is expressed as tags that wrap bits of text.
+      p The tag is like a word that belongs to a special language.
+
+  section.slide
+    h2 Markup
+    pre
+      code
+        &lt;<strong>important</strong>&gt; HTML Rules &lt;/<strong>important</strong>&gt;
+    pre
+      code
+        &lt;<strong>silly</strong>&gt; I like the Simpsons! &lt;/<strong>silly</strong>&gt;
+    pre
+      code
+        &lt;<strong>heading</strong>&gt; Luke, I am your father &lt;/<strong>heading</strong>&gt;
+
+  section.slide
+    h2 Markup
+    .block
+      p So, HTML is a collection of tags (words) that let us express structure and context of text documents.

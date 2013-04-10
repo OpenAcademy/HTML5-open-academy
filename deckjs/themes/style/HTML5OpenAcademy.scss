@@ -89,16 +89,20 @@
 
       .subtitle {
         font-size: 0.5em;
+        &.small{
+          margin-top: 15px;
+          font-size: 0.35em;
+        }
       }
     }
 
     h2 {
       color: #0b7495;
       border-bottom: 0;
-      background-color: #77787C;
-      margin: 0 -48px;
-      color:#FFFFFF;
-      padding: 10px;
+      //background-color: #77787C;
+      //margin: 0 -48px;
+      //color:#FFFFFF;
+      //padding: 10px;
 
       .cssreflections & {
         line-height: 1;
@@ -161,7 +165,7 @@
       color: #789;
     }
 
-    blockquote {
+    blockquote{
       font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
       font-size: 2em;
       padding: 1em 2em .5em 2em;
@@ -224,6 +228,15 @@
       }
     }
 
+    .block {
+      font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      font-size: 2em;
+      padding: .5em 2em;
+      color: #000;
+      position: relative;
+      z-index: auto;
+    }
+
     ::-moz-selection {
       background: #08455f;
       color: #fff;
@@ -241,6 +254,35 @@
 
       &:hover, &:focus {
         text-decoration: underline;
+      }
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 0.6em;
+    }
+
+    dl{
+      dt {
+        font-weight: bold;
+        &.deck-previous + dd,
+        &.deck-before + dd{
+          opacity: 0.4;
+        }
+
+        &.deck-current + dd {
+          opacity: 1;
+          @include transition-delay(0.3s);
+        }
+      }
+      dd {
+        margin-left: 35px;
+        opacity: 0;
+        @include transition-property(opacity);
+        @include transition-duration(1s);
+        & + dt {
+          margin-top:15px;
+        }
       }
     }
   }

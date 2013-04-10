@@ -93,26 +93,27 @@
 .deck-container .slide h1 .subtitle {
   font-size: 0.5em;
 }
-/* line 95, HTML5OpenAcademy.scss */
+/* line 92, HTML5OpenAcademy.scss */
+.deck-container .slide h1 .subtitle.small {
+  margin-top: 15px;
+  font-size: 0.35em;
+}
+/* line 99, HTML5OpenAcademy.scss */
 .deck-container .slide h2 {
   color: #0b7495;
   border-bottom: 0;
-  background-color: #77787C;
-  margin: 0 -48px;
-  color: #FFFFFF;
-  padding: 10px;
 }
-/* line 103, HTML5OpenAcademy.scss */
+/* line 107, HTML5OpenAcademy.scss */
 .cssreflections .deck-container .slide h2 {
   line-height: 1;
   -webkit-box-reflect: below -0.5555em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, 0.1)), to(transparent));
   -moz-box-reflect: below -0.5555em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.3) 100%);
 }
-/* line 110, HTML5OpenAcademy.scss */
+/* line 114, HTML5OpenAcademy.scss */
 .deck-container .slide h3 {
   color: #000;
 }
-/* line 114, HTML5OpenAcademy.scss */
+/* line 118, HTML5OpenAcademy.scss */
 .deck-container .slide pre {
   border-color: #cde;
   background: #fff;
@@ -120,7 +121,7 @@
   z-index: auto;
   /* http://nicolasgallagher.com/css-drop-shadows-without-images/ */
 }
-/* line 120, HTML5OpenAcademy.scss */
+/* line 124, HTML5OpenAcademy.scss */
 .borderradius .deck-container .slide pre {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -128,7 +129,7 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 126, HTML5OpenAcademy.scss */
+/* line 130, HTML5OpenAcademy.scss */
 .csstransforms.boxshadow .deck-container .slide pre > :first-child:before {
   content: "";
   position: absolute;
@@ -139,7 +140,7 @@
   left: 0;
   right: 0;
 }
-/* line 137, HTML5OpenAcademy.scss */
+/* line 141, HTML5OpenAcademy.scss */
 .csstransforms.boxshadow .deck-container .slide pre:before, .csstransforms.boxshadow .deck-container .slide pre:after {
   content: "";
   position: absolute;
@@ -152,7 +153,7 @@
   -moz-box-shadow: 0, 15px, 10px, rgba(0, 0, 0, 0.7);
   box-shadow: 0, 15px, 10px, rgba(0, 0, 0, 0.7);
 }
-/* line 148, HTML5OpenAcademy.scss */
+/* line 152, HTML5OpenAcademy.scss */
 .csstransforms.boxshadow .deck-container .slide pre:before {
   left: 10px;
   -webkit-transform: rotate(-3deg);
@@ -161,7 +162,7 @@
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 153, HTML5OpenAcademy.scss */
+/* line 157, HTML5OpenAcademy.scss */
 .csstransforms.boxshadow .deck-container .slide pre:after {
   right: 10px;
   -webkit-transform: rotate(3deg);
@@ -170,11 +171,11 @@
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 160, HTML5OpenAcademy.scss */
+/* line 164, HTML5OpenAcademy.scss */
 .deck-container .slide code {
   color: #789;
 }
-/* line 164, HTML5OpenAcademy.scss */
+/* line 168, HTML5OpenAcademy.scss */
 .deck-container .slide blockquote {
   font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-size: 2em;
@@ -185,7 +186,7 @@
   border: 1px solid #cde;
   z-index: auto;
 }
-/* line 174, HTML5OpenAcademy.scss */
+/* line 178, HTML5OpenAcademy.scss */
 .borderradius .deck-container .slide blockquote {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -193,7 +194,7 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 179, HTML5OpenAcademy.scss */
+/* line 183, HTML5OpenAcademy.scss */
 .boxshadow .deck-container .slide blockquote > :first-child:before {
   content: "";
   position: absolute;
@@ -204,7 +205,7 @@
   left: 0;
   right: 0;
 }
-/* line 190, HTML5OpenAcademy.scss */
+/* line 194, HTML5OpenAcademy.scss */
 .boxshadow .deck-container .slide blockquote:after {
   content: "";
   position: absolute;
@@ -219,18 +220,18 @@
   -moz-box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
   box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
 }
-/* line 204, HTML5OpenAcademy.scss */
+/* line 208, HTML5OpenAcademy.scss */
 .deck-container .slide blockquote p {
   margin: 0;
 }
-/* line 208, HTML5OpenAcademy.scss */
+/* line 212, HTML5OpenAcademy.scss */
 .deck-container .slide blockquote cite {
   font-size: .5em;
   font-style: normal;
   font-weight: bold;
   color: #888;
 }
-/* line 215, HTML5OpenAcademy.scss */
+/* line 219, HTML5OpenAcademy.scss */
 .deck-container .slide blockquote:before {
   content: "“";
   position: absolute;
@@ -241,44 +242,91 @@
   color: #ccf0f0;
   z-index: 1;
 }
-/* line 227, HTML5OpenAcademy.scss */
+/* line 231, HTML5OpenAcademy.scss */
+.deck-container .slide .block {
+  font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 2em;
+  padding: .5em 2em;
+  color: #000;
+  position: relative;
+  z-index: auto;
+}
+/* line 240, HTML5OpenAcademy.scss */
 .deck-container .slide ::-moz-selection {
   background: #08455f;
   color: #fff;
 }
-/* line 231, HTML5OpenAcademy.scss */
+/* line 244, HTML5OpenAcademy.scss */
 .deck-container .slide ::selection {
   background: #08455f;
   color: #fff;
 }
-/* line 237, HTML5OpenAcademy.scss */
+/* line 250, HTML5OpenAcademy.scss */
 .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited {
   color: #599;
   text-decoration: none;
 }
-/* line 242, HTML5OpenAcademy.scss */
+/* line 255, HTML5OpenAcademy.scss */
 .deck-container .slide a:hover, .deck-container .slide a:focus {
   text-decoration: underline;
 }
-/* line 248, HTML5OpenAcademy.scss */
+/* line 260, HTML5OpenAcademy.scss */
+.deck-container .slide figcaption {
+  text-align: center;
+  font-size: 0.6em;
+}
+/* line 266, HTML5OpenAcademy.scss */
+.deck-container .slide dl dt {
+  font-weight: bold;
+}
+/* line 269, HTML5OpenAcademy.scss */
+.deck-container .slide dl dt.deck-previous + dd, .deck-container .slide dl dt.deck-before + dd {
+  opacity: 0.4;
+}
+/* line 273, HTML5OpenAcademy.scss */
+.deck-container .slide dl dt.deck-current + dd {
+  opacity: 1;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+/* line 278, HTML5OpenAcademy.scss */
+.deck-container .slide dl dd {
+  margin-left: 35px;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+/* line 283, HTML5OpenAcademy.scss */
+.deck-container .slide dl dd + dt {
+  margin-top: 15px;
+}
+/* line 290, HTML5OpenAcademy.scss */
 .deck-container .deck-prev-link, .deck-container .deck-next-link {
   background: #fff;
   opacity: 0.5;
 }
-/* line 252, HTML5OpenAcademy.scss */
+/* line 294, HTML5OpenAcademy.scss */
 .deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
   color: #599;
 }
-/* line 256, HTML5OpenAcademy.scss */
+/* line 298, HTML5OpenAcademy.scss */
 .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
   opacity: 1;
   text-decoration: none;
 }
-/* line 262, HTML5OpenAcademy.scss */
+/* line 304, HTML5OpenAcademy.scss */
 .deck-container .deck-status {
   font-size: 0.6666em;
 }
-/* line 267, HTML5OpenAcademy.scss */
+/* line 309, HTML5OpenAcademy.scss */
 .deck-container.deck-menu .slide {
   background: transparent;
   -webkit-border-radius: 5px;
@@ -287,15 +335,15 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 271, HTML5OpenAcademy.scss */
+/* line 313, HTML5OpenAcademy.scss */
 .rgba .deck-container.deck-menu .slide {
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 275, HTML5OpenAcademy.scss */
+/* line 317, HTML5OpenAcademy.scss */
 .deck-container.deck-menu .slide.deck-current, .rgba .deck-container.deck-menu .slide.deck-current, .no-touch .deck-container.deck-menu .slide:hover {
   background: #fff;
 }
-/* line 281, HTML5OpenAcademy.scss */
+/* line 323, HTML5OpenAcademy.scss */
 .deck-container .goto-form {
   background: #fff;
   border: 1px solid #cde;
@@ -305,7 +353,7 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 286, HTML5OpenAcademy.scss */
+/* line 328, HTML5OpenAcademy.scss */
 .boxshadow .deck-container .goto-form {
   -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;

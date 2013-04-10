@@ -1,0 +1,30 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'run-script', 'watch' ]
+2 info using npm@1.2.11
+3 info using node@v0.8.20
+4 verbose read json /Users/zohararad/workspace/html5-open-academy/package.json
+5 warn package.json deckjs-boilerplate@0.0.1 No README.md file found!
+6 verbose run-script [ 'prewatch', 'watch', 'postwatch' ]
+7 info prewatch deckjs-boilerplate@0.0.1
+8 info watch deckjs-boilerplate@0.0.1
+9 verbose unsafe-perm in lifecycle true
+10 silly exec sh "-c" "./node_modules/.bin/jade --pretty -w templates/presentations --out ."
+11 silly sh,-c,./node_modules/.bin/jade --pretty -w templates/presentations --out .,/Users/zohararad/workspace/html5-open-academy spawning
+12 info deckjs-boilerplate@0.0.1 Failed to exec watch script
+13 error deckjs-boilerplate@0.0.1 watch: `./node_modules/.bin/jade --pretty -w templates/presentations --out .`
+13 error `sh "-c" "./node_modules/.bin/jade --pretty -w templates/presentations --out ."` failed with 1
+14 error Failed at the deckjs-boilerplate@0.0.1 watch script.
+14 error This is most likely a problem with the deckjs-boilerplate package,
+14 error not with npm itself.
+14 error Tell the author that this fails on your system:
+14 error     ./node_modules/.bin/jade --pretty -w templates/presentations --out .
+14 error You can get their info via:
+14 error     npm owner ls deckjs-boilerplate
+14 error There is likely additional logging output above.
+15 error System Darwin 12.3.0
+16 error command "node" "/usr/local/bin/npm" "run-script" "watch"
+17 error cwd /Users/zohararad/workspace/html5-open-academy
+18 error node -v v0.8.20
+19 error npm -v 1.2.11
+20 error code ELIFECYCLE
+21 verbose exit [ 1, true ]
