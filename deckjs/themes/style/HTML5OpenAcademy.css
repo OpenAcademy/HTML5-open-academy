@@ -359,3 +359,38 @@
   -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+/* line 333, HTML5OpenAcademy.scss */
+.deck-container .clock {
+  position: fixed;
+  z-index: 10;
+  left: 10px;
+  bottom: 10px;
+  font-size: 0.7em;
+}
+/* line 340, HTML5OpenAcademy.scss */
+.deck-container .clock #clock-time {
+  display: inline-block;
+  line-height: 0.3;
+}
+/* line 345, HTML5OpenAcademy.scss */
+.deck-container .clock #toggle-clock {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0 0 10px;
+  font-size: 0.6em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #6bd0f7));
+  background-image: -webkit-linear-gradient(#ffffff, #6bd0f7);
+  background-image: -moz-linear-gradient(#ffffff, #6bd0f7);
+  background-image: -o-linear-gradient(#ffffff, #6bd0f7);
+  background-image: linear-gradient(#ffffff, #6bd0f7);
+  padding: 2px 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #0dafef;
+  -webkit-box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.5);
+}
