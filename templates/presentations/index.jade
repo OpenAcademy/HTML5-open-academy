@@ -12,3 +12,24 @@ block slides
         a(href="./web-markup-intro.html",target="_blank")
           |Introduction to the Web and Markup languages
         |  - Zohar Arad
+  .logos
+    br
+    img(src='deckjs/images/logos/bizzabo.png')
+    img(src='deckjs/images/logos/mozilla.png')
+    img(src='deckjs/images/logos/w3c.png')
+    br
+    img(src='deckjs/images/logos/conduit.png')
+    img(src='deckjs/images/logos/CampusTLV.png')
+    img(src='deckjs/images/logos/startTau.png')
+    img(src='deckjs/images/logos/wix.png')
+    img(src='deckjs/images/logos/getTaxi.png')
+
+block init_script
+  script
+    $(function() {
+      $.deck('.slide', {
+        clock: {
+          enabled: false
+        }
+      });
+    });
