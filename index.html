@@ -18,14 +18,6 @@
     <link rel="stylesheet" href="./deckjs/plugins/codemirror/themes/elegant.css">
     <script src="./deckjs/modernizr.custom.js"></script>
   </head>
-  <style>
-      .logos{
-          text-align: left;
-          margin: 0 0 25px 0 !important;
-      }
-
-  </style>
-
   <body class="deck-container">
     <div class="iscoWatermark">
       <div class="left"></div>
@@ -37,7 +29,8 @@
       <ul>
         <li><a href="./web-markup-intro.html" target="_blank">Introduction to the Web and Markup languages</a> - Zohar Arad</li>
       </ul>
-    </section><a href="#" title="Previous" class="deck-prev-link">&#8592;</a><a href="#" title="Next" class="deck-next-link">&#8594;</a>
+    </section>
+    <div class="logos"><br><img src="deckjs/images/logos/bizzabo.png"><img src="deckjs/images/logos/mozilla.png"><img src="deckjs/images/logos/w3c.png"><br><img src="deckjs/images/logos/conduit.png"><img src="deckjs/images/logos/CampusTLV.png"><img src="deckjs/images/logos/startTau.png"><img src="deckjs/images/logos/wix.png"><img src="deckjs/images/logos/getTaxi.png"></div><a href="#" title="Previous" class="deck-prev-link">&#8592;</a><a href="#" title="Next" class="deck-next-link">&#8594;</a>
     <p class="deck-status"><span class="deck-status-current"></span>/<span class="deck-status-total"></span></p>
     <form action="../" method="get" class="goto-form">
       <label for="goto-slide">Go to slide:</label>
@@ -45,6 +38,7 @@
       <datalist id="goto-datalist"></datalist>
       <input type="submit" value="Go">
     </form><a href="../" title="Permalink to this slide" class="deck-permalink">#</a>
+    <div id="clock"><span id="clock-time"></span><a id="toggle-clock"></a></div>
     <script src="./deckjs/jquery-1.7.2.min.js"></script>
     <script src="./deckjs/core/deck.core.js"></script>
     <script src="./deckjs/core/deck.core.js"></script>
@@ -58,29 +52,11 @@
     <script src="./deckjs/plugins/codemirror/mode/javascript/javascript.js"></script>
     <script src="./deckjs/plugins/codemirror/deck.codemirror.js"></script>
     <script src="./deckjs/plugins/clock/deck.clock.js"></script>
-
-    <div class="logos">
-        <br/>
-        <img src="deckjs/images/logos/bizzabo.png">
-        <img src="deckjs/images/logos/mozilla.png">
-        <img src="deckjs/images/logos/w3c.png">
-        <br/>
-        <img src="deckjs/images/logos/conduit.png">
-        <img src="deckjs/images/logos/CampusTLV.png">
-        <img src="deckjs/images/logos/startTau.png">
-        <img src="deckjs/images/logos/wix.png">
-        <img src="deckjs/images/logos/getTaxi.png">
-    </div>
-
     <script>
       $(function() {
         $.deck('.slide', {
-          codemirror: {
-            lineNumbers: true,
-            theme: "elegant",
-            indentUnit: 2,
-            indentWithTabs: false,
-            runnable: false
+          clock: {
+            enabled: false
           }
         });
       });

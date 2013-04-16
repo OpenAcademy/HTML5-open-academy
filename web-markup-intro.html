@@ -27,6 +27,7 @@
       <h1>Welcome
         <div class="subtitle">HTML5 Open Academy</div>
       </h1>
+      <div class="logos inline"><img src="deckjs/images/logos/small/bizzabo.png"><img src="deckjs/images/logos/small/mozilla.png"><img src="deckjs/images/logos/small/w3c.png"><img src="deckjs/images/logos/small/conduit.png"><img src="deckjs/images/logos/small/CampusTLV.png"><img src="deckjs/images/logos/small/startTau.png"><img src="deckjs/images/logos/small/wix.png"><img src="deckjs/images/logos/small/getTaxi.png"></div>
     </section>
     <section class="slide">
       <h1>Zohar Arad
@@ -173,7 +174,7 @@
       <datalist id="goto-datalist"></datalist>
       <input type="submit" value="Go">
     </form><a href="../" title="Permalink to this slide" class="deck-permalink">#</a>
-    <div class="clock"><span id="clock-time"></span><a id="toggle-clock"></a></div>
+    <div id="clock"><span id="clock-time"></span><a id="toggle-clock"></a></div>
     <script src="./deckjs/jquery-1.7.2.min.js"></script>
     <script src="./deckjs/core/deck.core.js"></script>
     <script src="./deckjs/core/deck.core.js"></script>
@@ -196,6 +197,9 @@
             indentUnit: 2,
             indentWithTabs: false,
             runnable: false
+          },
+          clock: {
+            enable: true
           }
         });
       });

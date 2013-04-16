@@ -3,7 +3,9 @@
       timer, seconds = 0, dom = {}, started = false, ready = false;
 
   $.extend(true, $[deck].defaults, {
+    enable: true,
     selectors: {
+      clock: "#clock",
       toggle: "#toggle-clock",
       time: "#clock-time"
     }
@@ -50,6 +52,10 @@
   function setupClock(){
     "use strict";
     var opts    = $[deck]('getOptions');
+    if(!opts.clock.enable){
+      $(opts.selectors.clock).remove();
+      return;
+    }
     dom.toggle  = $(opts.selectors.toggle);
     dom.time    = $(opts.selectors.time);
     started = false;

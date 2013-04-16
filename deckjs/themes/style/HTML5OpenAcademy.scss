@@ -45,6 +45,10 @@
     display: inline-block;
     vertical-align: middle;
   }
+
+  &.inline img + img{
+    margin-left: 10px;
+  }
 }
 
 
@@ -330,7 +334,7 @@
     }
   }
 
-  .clock{
+  #clock{
     position: fixed;
     z-index: 10;
     left:10px;
