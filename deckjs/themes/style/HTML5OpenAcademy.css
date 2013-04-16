@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 4, HTML5OpenAcademy.scss */
 .iscoWatermark {
   /** might be problematic with mobile devices */
@@ -40,12 +39,12 @@
   text-align: center;
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
-/* line 44, HTML5OpenAcademy.scss */
+/* line 45, HTML5OpenAcademy.scss */
 .logos img {
   display: inline-block;
-  vertical-align: middle;
 }
 /* line 49, HTML5OpenAcademy.scss */
 .logos.inline img + img {
@@ -110,8 +109,8 @@
 /* line 111, HTML5OpenAcademy.scss */
 .cssreflections .deck-container .slide h2 {
   line-height: 1;
-  -webkit-box-reflect: below -0.5555em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, 0.1)), to(transparent));
-  -moz-box-reflect: below -0.5555em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-box-reflect: below -0.556em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, 0.1)), to(transparent));
+  -moz-box-reflect: below -0.556em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.3) 100%);
 }
 /* line 118, HTML5OpenAcademy.scss */
 .deck-container .slide h3 {
@@ -218,8 +217,8 @@
   bottom: 10px;
   left: 0;
   right: 50%;
-  -moz-border-radius: 10px / 100px;
-  border-radius: 10px / 100px;
+  -moz-border-radius: 10px/100px;
+  border-radius: 10px/100px;
   -webkit-box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
   box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
@@ -299,9 +298,9 @@
 .deck-container .slide dl dd {
   margin-left: 35px;
   opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
+  -webkit-transition-property: -webkit-opacity;
+  -moz-transition-property: -moz-opacity;
+  -o-transition-property: -o-opacity;
   transition-property: opacity;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
