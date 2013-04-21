@@ -47,10 +47,9 @@
 /* line 46, HTML5OpenAcademy.scss */
 .logos img {
   display: inline-block;
-  max-width: auto;
+  width: auto;
   max-height: 30%;
-  height: auto\9;
-  /* ie8 */
+  height: auto\9; /* ie8 */
   padding: 5px;
 }
 /* line 54, HTML5OpenAcademy.scss */
