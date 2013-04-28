@@ -1,0 +1,9 @@
+aside {
+	background: red;
+	color: yellow;
+}
+
+aside p {
+	color: #fff;
+	background: #000;
+}
