@@ -10,7 +10,8 @@
     font-family: monospace;
     overflow: auto;
     height: 100%;
-    border: 1px solid #ddd; }
+    border: 1px solid #ddd;
+    background: #fff; }
     .deck-container .slide .CodeMirror .button {
       padding: 5px;
       cursor: pointer;

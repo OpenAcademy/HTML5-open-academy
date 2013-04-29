@@ -1,0 +1,55 @@
+===========
+  Content
+===========
+
+<h1 - h6>
+<p>
+<ul>
+<ol>
+<li>
+<table>
+<iframe>
+<a>
+<video>
+<audio>
+<strong>
+
+<img />
+<br />
+
+<form>
+	<label>
+	<input text>
+	<input password>
+	<input button>
+	<input submit>
+	<input checkbox>
+	<input radio>
+	<select><option>
+
+<table>
+	<tr>
+		<th>
+	<tr>
+		<td>
+
+=============
+  Structure
+=============
+
+<header>
+<footer>
+<aside>
+<section>
+<article>
+<figure> - img & text
+<hgroup>
+<div>
+<span>
+
+========
+  HEAD
+========
+
+<script>
+<link rel="stylesheet" href="style.css">
