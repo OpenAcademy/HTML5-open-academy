@@ -18,7 +18,9 @@
 <br />
 
 <form>
+	<label>
 	<input text>
+	<input password>
 	<input button>
 	<input submit>
 	<input checkbox>
