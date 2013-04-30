@@ -1,0 +1,5 @@
+http_path = "/session03-css/bingoBoard"
+css_dir = "assets/css"
+sass_dir = "assets/css"
+images_dir = "assets/images"
+javascripts_dir = "assets/js"
