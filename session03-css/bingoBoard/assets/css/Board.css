@@ -1,0 +1,60 @@
+/**
+** style definition for the Bingo board
+**/
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Oswald.woff) format("woff");
+}
+
+/* line 13, Board.scss */
+* {
+  font-family: sans-serif, 'Oswald';
+}
+
+/* line 18, Board.scss */
+body, html {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 29, Board.scss */
+.bingoBoard {
+  font-size: 25px;
+  border: 1px solid #ecf0f1;
+}
+/* line 35, Board.scss */
+.bingoBoard tr td, .bingoBoard tr th {
+  background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) 1px, transparent 1px, transparent 6px);
+  background-size: 2px 2px;
+  padding: 10px;
+  box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.75);
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+/* line 44, Board.scss */
+.bingoBoard tr th {
+  font-weight: bold;
+  background: #3498db;
+}
+/* line 49, Board.scss */
+.bingoBoard tr td {
+  cursor: pointer;
+}
+/* line 52, Board.scss */
+.bingoBoard tr td:hover, .bingoBoard tr td.selected {
+  color: #FFFF00;
+  background: #000000;
+  border: 2px solid #282828;
+}
+/* line 59, Board.scss */
+.bingoBoard tr td.completedRow, .bingoBoard tr td.completedColumn {
+  background: #FF3300;
+}
+/* line 66, Board.scss */
+.bingoBoard tr:nth-of-type(4) td:nth-of-type(3) {
+  opacity: 0;
+}
