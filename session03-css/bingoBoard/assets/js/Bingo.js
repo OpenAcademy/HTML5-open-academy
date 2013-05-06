@@ -12,7 +12,34 @@ var Bingo = function () {
         size;
 
     /**
+     * Mark/unmark line when its complete
+     * @param obj {Object}
+     * @param obj.items {Array} - Array of items to mark/reset
+     * @param obj.className {String} - The css class name to add/remove from the line
+     *
+     */
+    function toggleCompelte(obj) {
+
+        // Flag to mark if the line is completed or not.
+        var index = 0,
+            completed = true;
+
+        // Loop over the items and check to see if all of them are selected or not
+        for (index = 0; index < size; index++) {
+            if (!obj.items[index].classList.contains('selected')) {
+                completed = false;
+                break;
+            }
+        }
+
+        for (index = 0; index < size; index++) {
+            obj.items[index].classList[completed ? 'add' : 'remove'](obj.className);
+        }
+    }
+
+    /**
      * Toggle the cell selection
+     * @param e {Event} The click event
      */
     function toggleSelection(e) {
 
@@ -21,41 +48,22 @@ var Bingo = function () {
             cell = e.srcElement,
             cells;
 
-        cell.classList.toggle('selected,completedRow,completedColumn');
+        // Toggle the clicked cell state
+        cell.classList.toggle('selected');
 
-        // Check to see if the columns is completed or not
-        cells = document.querySelectorAll('[data-row="' + cell.dataset['row'] + '"].selected');
+        // Check to see if we have completed full line or not
+        toggleCompelte({
+            items    : document.querySelectorAll('[data-row="' + cell.dataset['row'] + '"]'),
+            className: 'completedRow'
+        });
 
-        // We have full row
-        if (size === cells.length) {
-            for (index = 0; index < cells.length; index++) {
-                cells[index].classList.add('completedRow');
-            }
-        } else {
-            for (index = 0; index < cells.length; index++) {
-                cells[index].classList.remove('completedRow');
-            }
-
-        }
-
-
-        // Check to see if the columns is completed or not
-        cells = document.querySelectorAll('[data-col="' + cell.dataset['col'] + '"].selected');
-
-        // We have full row
-        if (size === cells.length) {
-            for (index = 0; index < cells.length; index++) {
-                cells[index].classList.add('completedColumn');
-            }
-        } else {
-            for (index = 0; index < cells.length; index++) {
-                cells[index].classList.remove('completedColumn');
-            }
-
-        }
+        // Check for complete column
+        toggleCompelte({
+            items    : document.querySelectorAll('[data-col="' + cell.dataset['col'] + '"]'),
+            className: 'completedColumn'
+        });
 
     }
-
 
     return{
 
@@ -86,12 +94,8 @@ var Bingo = function () {
                 cell.dataset['col'] = (index % size) + 1;
 
             }
-
-
         }
-
     }
-
 }();
 
 // Wait for the page to load and then build the board.
