@@ -3,13 +3,12 @@
 <head>
     <meta charset=utf-8/>
     <title>Html5 Open academy Bingo Bingo Card</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
 </head>
 <body>
 
 <div id="page">
-    <h1>Html5 Open academy Bingo Bingo Card</h1>
-    <table class="bingoBoard">
+    <h1>Html5 Open academy Bingo Card</h1>
+    <table class="bingoBoard" cellspacing="10" cellpadding="5">
         <tr>
             <th>B</th>
             <th>I</th>
@@ -17,8 +16,7 @@
             <th>G</th>
             <th>O</th>
         </tr>
-
-        <tr>
+        <tr class="completed">
             <td>01</td>
             <td>02</td>
             <td>03</td>
@@ -35,7 +33,7 @@
         <tr>
             <td>11</td>
             <td>12</td>
-            <td></td>
+            <td class="selected"></td>
             <td>13</td>
             <td>14</td>
         </tr>
@@ -56,6 +54,6 @@
 
     </table>
 </div>
-<script src="js/script.js"></script>
+<script src="js/Bingo.js"></script>
 </body>
 </html>
