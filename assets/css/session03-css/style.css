@@ -90,6 +90,7 @@ opacity: 1;
 
 .slide div.box {
 	display: box;
+	display: -moz-box;
 	display: -webkit-box;
 }
 .slide div.box div.box_half {
