@@ -1,0 +1,107 @@
+.full_screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.top{
+	position: absolute;
+	left: 0.5em;
+}
+
+.yellow {
+	color: yellow;
+}
+
+div#syntax {
+	text-align: center;
+	font-size: 7em;
+	letter-spacing: -0.1em;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+
+div#syntax span.caption {
+	letter-spacing: -0.8em;
+	opacity: 0;
+}
+
+.rotate {
+	animation: rotate 15s 1;
+	-webkit-animation: rotate 15s 1;
+}
+
+@keyframes rotate
+{
+0%{
+font-size: 7em;
+letter-spacing: -0.1em;
+transform: rotate(-90deg);
+}
+5%, 100%{
+font-size: 2em;
+letter-spacing: 0em;
+transform: rotate(0deg);
+}
+}
+@-webkit-keyframes rotate
+{
+0%{
+font-size: 7em;
+letter-spacing: -0.1em;
+-webkit-transform: rotate(-90deg);
+}
+5%, 100%{
+font-size: 2em;
+letter-spacing: 0em;
+-webkit-transform: rotate(0deg);
+}
+}
+
+.reveal {
+	animation: reveal 15s 1;
+	-webkit-animation: reveal 15s 1;
+}
+
+@keyframes reveal
+{
+0%{
+letter-spacing: -0.8em;
+opacity: 0;
+}
+5%, 100%{
+letter-spacing: 0em;
+opacity: 1;
+}
+}
+@-webkit-keyframes reveal
+{
+0%{
+letter-spacing: -0.8em;
+opacity: 0;
+}
+5%, 100%{
+letter-spacing: 0em;
+opacity: 1;
+}
+}
+
+.slide div.box {
+	display: box;
+	display: -moz-box;
+	display: -webkit-box;
+}
+.slide div.box div.box_half {
+	width: 50%;
+	padding: 0 10px;
+}
+.slide div.box div.box_third {
+	width: 33%;
+	padding: 0 10px;
+}
+
+.slide h1#overapi {
+	font-size: 2em;
+}

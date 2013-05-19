@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS | HTML5 Open Academy</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=1024, user-scalable=no">
+		<link rel="stylesheet" href="./deckjs/core/deck.core.css">
+		<link rel="stylesheet" href="./deckjs/extensions/goto/deck.goto.css">
+		<link rel="stylesheet" href="./deckjs/extensions/menu/deck.menu.css">
+		<link rel="stylesheet" href="./deckjs/extensions/navigation/deck.navigation.css">
+		<link rel="stylesheet" href="./deckjs/extensions/hash/deck.hash.css">
+		<link rel="stylesheet" href="./deckjs/extensions/scale/deck.scale.css">
+		<link rel="stylesheet" href="./deckjs/themes/style/openAcademy.css">
+		<link rel="stylesheet" href="./deckjs/themes/transition/horizontal-slide.css">
+		<link rel="stylesheet" href="assets/css/session03-css/style.css">
+		<script src="./deckjs/modernizr.custom.js"></script>
+	</head>
+	<body class="deck-container">
+		<div class="iscoWatermark">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+		<section class="slide intro"><img src="deckjs/images/logos/isoc1.png" class="isoc">
+			<h2 class="introTitle">
+			<br>
+			HTML5 Open Academy</h2>
+			<div class="logos">
+				<br>
+				<img src="deckjs/images/logos/bizzabo.png"><img src="deckjs/images/logos/CampusTLV.png"><img src="deckjs/images/logos/mozilla.png">
+				<br>
+				<img src="deckjs/images/logos/conduit.png"><img src="deckjs/images/logos/startTau.png"><img src="deckjs/images/logos/w3c.png"><img src="deckjs/images/logos/wix.png"><img src="deckjs/images/logos/getTaxi.png">
+			</div>
+		</section>
+		<section class="slide">
+			<h1>CSS Basics</h1>
+		</section>
+		<section class="slide">
+			<h1>Shai Mesisterano
+			<div class="subtitle">
+				Web Developer
+			</div>
+			<div class="subtitle small">
+				<br />
+			</div>
+			<div class="subtitle small">
+				<a href="http://www.mcterano.com/blog" target="_blank">"קוד נקי"
+				<br />
+				בלוג למפתחי ווב</a>
+			</div></h1>
+		</section>
+
+		<section class="slide">
+			<h2>What we're going to do today?</h2>
+			<h4>(45 Minutes) Theory:</h4>
+			<ul>
+				<li>
+					Part 1: Introduction.
+				</li>
+				<li>
+					Part 2: Deep dive into CSS.
+				</li>
+				<li>
+					Part 3: Selectors.
+				</li>
+				<li>
+					Part 4: CSS Syntax.
+				</li>
+				<li>
+					Part 5: Tips.
+				</li>
+			</ul>
+			<h4>(45 Minutes) Exercise...</h4>
+			<ul>
+				<li>
+					Bingo!
+				</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Part 1</h2>
+			<h1>Introduction</h1>
+		</section>
+		<section class="slide">
+			<h2>We're going to talk about:</h2>
+			<h1>
+			<div class="subtitle">
+				Designing web pages using CSS
+			</div></h1>
+		</section>
+		<section class="slide">
+			<img class="full_screen" src="assets/images/session03-css/old_house.jpg" />
+			<h2 class="top">
+			<div class="subtitle">
+				Turning this...
+			</div></h2>
+		</section>
+		<section class="slide">
+			<img class="full_screen" src="assets/images/session03-css/new_house.jpg" />
+			<h2 class="top">
+			<div class="subtitle">
+				Into this!
+			</div></h2>
+		</section>
+
+		<section class="slide">
+			<h2>What is CSS?</h2>
+			<ul>
+				<li class="slide">
+					The most rich, fast &amp; popular way to design web pages.
+				</li>
+				<li class="slide">
+					Alternatives:
+					<ul>
+						<li>
+							Adobe Flash (not supported in iPhone).
+						</li>
+						<li>
+							Microsoft Silverlight (not supported by Microsoft).
+						</li>
+						<li>
+							Java Applet (not supported by Search Engines).
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h1>Why do we want to learn CSS?</h1>
+		</section>
+		<section class="slide">
+			<h2>Mobile Revolution</h2>
+			<ul>
+				<li class="slide">
+					Mobile devices have modern browsers.
+				</li>
+				<li class="slide">
+					Mobile websites -  Cross Browser &amp; Cross Device - Save Time. Save Money.
+				</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>Dynamic Revolution</h2>
+			<ul>
+				<li class="slide">
+					From static images - to dynamic animations.
+				</li>
+				<li class="slide">
+					Great capabilities - 3D, animations, fonts and more...
+				</li>
+				<li class="slide">
+					Example: <a href="http://www.mcterano.com/blog/?p=125" target="_blank">Make the page dance!</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h1>Background</h1>
+		</section>
+		<section class="slide">
+			<h2>What can we do with CSS?</h2>
+			<ul>
+				<li class="slide">
+					Create cool games.
+				</li>
+				<li class="slide">
+					Create fancy websites.
+				</li>
+				<li class="slide">
+					Create interactive presentations.
+				</li>
+				<li class="slide">
+					Examples:
+					<ol>
+						<li>
+							<a href="http://codepen.io/jaysalvat/pen/HaqBf" target="_blank"> Mona Lisa </a>
+						</li>
+						<li>
+							<a href="http://helloracer.com/webgl/" target="_blank"> Hello Racer </a>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h1>We already know...</h1>
+		</section>
+		<section class="slide">
+			<h2>HTML Syntax</h2>
+			<pre class="codepen" data-height="180" data-type="html" data-href="ickxK" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/ickxK">Check out this Pen!</a></pre>
+			<script async src="http://codepen.io/assets/embed/ei.js"></script>
+		</section>
+		<section class="slide">
+			<h2>CSS in 3 steps...</h2>
+			<ul>
+				<li>
+					From HTML Syntax:
+					<pre class="codepen" data-height="70" data-type="html" data-href="moLFl" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/moLFl">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</li>
+				<li>
+					Through dummy CSS syntax:
+					<pre class="codepen" data-height="170" data-type="css" data-href="ABweC" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/ABweC">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</li>
+				<li>
+					To real CSS syntax:
+					<pre class="codepen" data-height="170" data-type="css" data-href="hEDmr" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/hEDmr">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<img class="full_screen" src="assets/images/session03-css/fish.jpg" />
+			<h2>Part 2</h2>
+			<h1>
+			<div class="subtitle yellow">
+				Deep dive into CSS
+			</div></h1>
+		</section>
+		<section class="slide">
+			<h2>Adding CSS to a page:</h2>
+			<ul class="slide">
+				<li>
+					Style tag
+					<pre class="codepen" data-height="550" data-type="html" data-href="rtCIm" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/rtCIm">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</li>
+			</ul>
+		</section>
+		<section class="slide" onclick="$('#syntax').toggleClass('rotate'); $('#syntax .caption').toggleClass('reveal'); ">
+			<h2>CSS Smiley</h2>
+			<div id="syntax" class="subtitle">
+				<span class="caption">Selector </span> { <span class="caption">Property</span>-<span class="caption">Name</span> : <span class="caption">Value</span> }
+			</div>
+		</section>
+		<section class="slide">
+			<h2>Hello (red) CSS!</h2>
+			<ul>
+				<li class="slide">
+					WHO (body) does WHAT (Background Color = Red)
+					<pre class="codepen" data-height="550" data-type="html" data-href="lsraz" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/lsraz">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</li>
+			</ul>
+		</section>
+
+		<section class="slide">
+			<h2>Part 3</h2>
+			<h1>Selectors</h1>
+		</section>
+		<section class="slide">
+			<h2>Type Selectors</h2>
+			<ul class="slide">
+				<li>
+					Who?
+					<code>
+						body
+					</code>
+				</li>
+				<li>
+					What?
+					<code>
+						background-color: red;
+					</code>
+					<pre class="codepen" data-height="550" data-type="html" data-href="lsraz" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/lsraz">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>Class Selectors</h2>
+			<ul class="slide">
+				<li>
+					A Class can be assigned to <u>MULTIPLE</u> elements.
+				</li>
+				<li>
+					Who?
+					<code>
+						.big
+					</code>
+				</li>
+				<li>
+					What?
+					<code>
+						font-size: 90px;
+					</code>
+					<pre class="codepen" data-height="550" data-type="html" data-href="zhpfy" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/zhpfy">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>ID Selectors</h2>
+			<ul class="slide">
+				<li>
+					An ID can be assigned to a <u>SINGLE</u> element.
+				</li>
+				<li>
+					Who?
+					<code>
+						#logo
+					</code>
+				</li>
+				<li>
+					What?
+					<code>
+						letter-spacing: 20px;
+					</code>
+					<pre class="codepen" data-height="550" data-type="html" data-href="pgdoL" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/pgdoL">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>Who's stronger?</h2>
+			<div class="box">
+				<div class="box_half">
+					<pre class="codepen" data-height="250" data-type="html" data-href="Djtyk" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/Djtyk">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+					<pre class="codepen" data-height="250" data-type="css" data-href="Djtyk" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/Djtyk">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_half">
+					<img src="assets/images/session03-css/spaghetti.jpg" />
+				</div>
+			</div>
+		</section>
+
+		<section class="slide">
+			<h1 id="overapi"><a href="http://overapi.com/css" target="_blank">http://overAPI.com/CSS</a></h1>
+			<h2>Styles dictionary</h2>
+		</section>
+
+		<section class="slide">
+			<h1>CSS Fallback</h1>
+		</section>
+		<section class="slide">
+			<h2>What happens when we don't define CSS?</h2>
+			<div class="slide">
+				<img src="assets/images/session03-css/computed_styles.png" />
+			</div>
+		</section>
+
+		<section class="slide">
+			<h1>Who, What and... WHERE?!</h1>
+		</section>
+		<section class="slide">
+			<h2>Embedded Styles</h2>
+			<ul>
+				<li>
+					We already know that!
+				</li>
+				<pre class="codepen" data-height="550" data-type="html" data-href="rtCIm" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/rtCIm">Check out this Pen!</a></pre>
+				<script async src="http://codepen.io/assets/embed/ei.js"></script>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>Inline Styles</h2>
+			<pre class="codepen" data-height="550" data-type="html" data-href="aegFx" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/aegFx">Check out this Pen!</a></pre>
+			<script async src="http://codepen.io/assets/embed/ei.js"></script>
+		</section>
+		<section class="slide">
+			<h2>External Styles</h2>
+			<pre class="codepen" data-height="550" data-type="html" data-href="eEjmG" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/eEjmG">Check out this Pen!</a></pre>
+			<script async src="http://codepen.io/assets/embed/ei.js"></script>
+			<ul>
+				<li>
+					Cached by browsers
+				</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>Location Comparison</h2>
+			<div class="box">
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="html" data-href="rtCIm" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/rtCIm">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="html" data-href="aegFx" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/aegFx">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="html" data-href="eEjmG" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/eEjmG">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide">
+			<h2>Part 4</h2>
+			<h1>CSS Syntax</h1>
+		</section>
+		<section class="slide">
+			<h2>Comments</h2>
+			<pre class="codepen" data-height="200" data-type="css" data-href="vGydj" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/vGydj">Check out this Pen!</a></pre>
+			<script async src="http://codepen.io/assets/embed/ei.js"></script>
+			<ul>
+				<li>
+					To answer the unquestioned
+				</li>
+			</ul>
+		</section>
+		<section class="slide">
+			<h2>Colors</h2>
+			<ul>
+				<li>
+					Can be:
+					<ol>
+						<li>
+							Names: Red, Blue, Green...
+						</li>
+						<li>
+							Hexadecimal: #000000, #ff0000.. <a href="http://www.w3schools.com/html/html_colornames.asp" target="_blaank">Index</a>
+						</li>
+						<li>
+							Uses:
+							<code>
+								color
+							</code>
+							,
+							<code>
+								background-color
+							</code>
+							,
+							<code>
+								border-color
+							</code>
+							...
+						</li>
+					</ol>
+				</li>
+			</ul>
+			<div class="box">
+				<div class="box_third">
+					<pre class="codepen" data-height="400" data-type="html" data-href="qujwK" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/qujwK">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="400" data-type="css" data-href="qujwK" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/qujwK">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="400" data-type="result" data-href="qujwK" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/qujwK">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+		<section class="slide">
+			<h2>Units</h2>
+			<ul>
+				<li>
+					Can be:
+					<ol>
+						<li>
+							Pixels: 48px, 24px...
+						</li>
+						<li>
+							Percentage: 100%, 50%... (Relative)
+						</li>
+						<li>
+							Ems: 1em, 0.5em... (Relative)
+						</li>
+						<li>
+							Uses:
+							<code>
+								font-size
+							</code>
+							,
+							<code>
+								width
+							</code>
+							,
+							<code>
+								height
+							</code>
+							...
+						</li>
+					</ol>
+				</li>
+			</ul>
+			<div class="box">
+				<div class="box_third">
+					<pre class="codepen" data-height="500" data-type="html" data-href="ByacI" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/ByacI">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="500" data-type="css" data-href="ByacI" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/ByacI">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="500" data-type="result" data-href="ByacI" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/ByacI">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+		<section class="slide">
+			<h2>Images</h2>
+			<ul>
+
+				<li>
+					Uses:
+					<code>
+						background-image
+					</code>
+					,
+					<code>
+						list-style-image
+					</code>
+					.
+				</li>
+			</ul>
+			<div class="box">
+				<div class="box_third">
+					<pre class="codepen" data-height="500" data-type="html" data-href="vKDsl" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/vKDsl">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="500" data-type="css" data-href="vKDsl" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/vKDsl">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="500" data-type="result" data-href="vKDsl" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/vKDsl">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+		<section class="slide">
+			<h2>Font</h2>
+			<div class="box">
+				<div class="box_third">
+					<pre class="codepen" data-height="400" data-type="html" data-href="nAbEm" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/nAbEm">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="400" data-type="css" data-href="nAbEm" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/nAbEm">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="400" data-type="result" data-href="nAbEm" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/nAbEm">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+		</section>
+		<section class="slide">
+			<h2>Text</h2>
+			<div class="box">
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="html" data-href="tenLk" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/tenLk">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="css" data-href="tenLk" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/tenLk">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="result" data-href="tenLk" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/tenLk">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+		<section class="slide">
+			<h2>Links</h2>
+			<div class="box">
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="html" data-href="ypFmc" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/ypFmc">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="css" data-href="ypFmc" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/ypFmc">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="result" data-href="ypFmc" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/ypFmc">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide">
+			<h2>Part 5</h2>
+			<h1>Tips</h1>
+		</section>
+		<section class="slide">
+			<h2>Shorthands</h2>
+			<div class="box">
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="html" data-href="EBALt" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/EBALt">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="css" data-href="EBALt" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/EBALt">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_third">
+					<pre class="codepen" data-height="550" data-type="result" data-href="EBALt" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/EBALt">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+		<section class="slide">
+			<h2>Use <u>the most specific</u> element!</h2>
+
+			<div class="box">
+				<div class="box_half">
+					<pre class="codepen" data-height="550" data-type="html" data-href="Fvduy" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/Fvduy">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_half">
+					<pre class="codepen" data-height="550" data-type="css" data-href="Fvduy" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/Fvduy">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+		<section class="slide">
+			<h2>Define <u>multiple elements</u>, by separating them with a comma!</h2>
+			<div class="box">
+				<div class="box_half">
+					<pre class="codepen" data-height="550" data-type="html" data-href="xLtKE" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/Fvduy">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_half">
+					<pre class="codepen" data-height="550" data-type="css" data-href="xLtKE" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/Fvduy">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+		<section class="slide">
+			<h2>Be <u>consistent</u> with names!</h2>
+			<div class="box">
+				<div class="box_half">
+					<pre class="codepen" data-height="550" data-type="html" data-href="fBzcn" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/fBzcn">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+				<div class="box_half">
+					<pre class="codepen" data-height="550" data-type="css" data-href="fBzcn" data-user="ShaiMesisterano" data-safe="true"><a href="http://codepen.io/ShaiMesisterano/pen/fBzcn">Check out this Pen!</a></pre>
+					<script async src="http://codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide">
+			<h1>That's it folks...</h1>
+		</section>
+
+		<section class="slide">
+			<h2>Register</h2>
+			<h2><a href="http://bit.ly/openacademy4" target="_blank">http://bit.ly/openacademy4</a></h2>
+			<img src="assets/images/session03-css/qr.png" />
+		</section>
+		<a href="#" title="Previous" class="deck-prev-link">&#8592;</a><a href="#" title="Next" class="deck-next-link">&#8594;</a>
+		<script src="./deckjs/jquery-1.7.2.min.js"></script>
+		<script src="./deckjs/core/deck.core.js"></script>
+		<script src="./deckjs/extensions/hash/deck.hash.js"></script>
+		<script src="./deckjs/extensions/menu/deck.menu.js"></script>
+		<script src="./deckjs/extensions/goto/deck.goto.js"></script>
+		<script src="./deckjs/extensions/navigation/deck.navigation.js"></script>
+		<script src="./deckjs/extensions/scale/deck.scale.js"></script>
+		<script>
+			$(document).ready(function() {
+				$.deck('.slide');
+			});
+		</script>
+	</body>
+</html>
