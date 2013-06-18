@@ -47,6 +47,7 @@
 /* line 46, openAcademy.scss */
 .logos img {
   display: inline-block;
+  vertical-align: middle;
   max-width: auto;
   max-height: 30%;
   height: auto\9;
