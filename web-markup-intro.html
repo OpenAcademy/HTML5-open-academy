@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Web &amp; Markup Introduction | HTML5 Open Academy</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,40 +17,55 @@
     <link rel="stylesheet" href="./deckjs/plugins/codemirror/deck.codemirror.css">
     <link rel="stylesheet" href="./deckjs/plugins/codemirror/themes/elegant.css">
     <script src="./deckjs/modernizr.custom.js"></script>
-  </head>
-  <body class="deck-container">
-    <div class="iscoWatermark">
-      <div class="left"></div>
-      <div class="right"></div>
+</head>
+<body class="deck-container">
+<div class="iscoWatermark">
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+<section class="slide intro"><img src="deckjs/images/logos/isoc1.png" class="isoc">
+
+    <h2 class="introTitle"><br>HTML5 Open Academy</h2>
+
+    <div class="logos">
+        <br>
+        <img src="deckjs/images/logos/bizzabo.png">
+        <img src="deckjs/images/logos/CampusTLV.png">
+        <img src="deckjs/images/logos/HP.png">
+        <img src="deckjs/images/logos/mozilla.png">
+        <br>
+        <img src="deckjs/images/logos/conduit.png">
+        <img src="deckjs/images/logos/startTau.png">
+        <img src="deckjs/images/logos/w3c.png">
+        <img src="deckjs/images/logos/wix.png">
+        <img src="deckjs/images/logos/getTaxi.png">
     </div>
-    <section class="slide intro"><img src="deckjs/images/logos/isoc1.png" class="isoc">
-      <h2 class="introTitle"><br>HTML5 Open Academy</h2>
-      <div class="logos"><br><img src="deckjs/images/logos/bizzabo.png"><img src="deckjs/images/logos/CampusTLV.png"><img src="deckjs/images/logos/mozilla.png"><br><img src="deckjs/images/logos/conduit.png"><img src="deckjs/images/logos/startTau.png"><img src="deckjs/images/logos/w3c.png"><img src="deckjs/images/logos/wix.png"><img src="deckjs/images/logos/getTaxi.png"><img src="deckjs/images/logos/reallygood.png"></div>
-    </section>
-    <section class="slide">
-      <h1>Welcome
+</section>
+<section class="slide">
+    <h1>Welcome
         <div class="subtitle">Web &amp; Markup Introduction</div>
-      </h1>
-    </section>
-    <section class="slide">
-      <h1>Zohar Arad
+    </h1>
+</section>
+<section class="slide">
+    <h1>Zohar Arad
         <div class="subtitle">Front-End &amp; Web Developer</div>
-        <div class="subtitle small"><a href="http://www.zohararad.com" target="_blank">www.zohararad.com</a><br>@zohararad</div>
-      </h1>
-    </section>
-    <section class="slide">
-      <h2>We're going to talk about</h2>
-      <ul>
+        <div class="subtitle small"><a href="http://www.zohararad.com" target="_blank">www.zohararad.com</a><br>@zohararad
+        </div>
+    </h1>
+</section>
+<section class="slide">
+    <h2>We're going to talk about</h2>
+    <ul>
         <li class="slide">Some basic definitions</li>
         <li class="slide">Servers &amp; Clients</li>
         <li class="slide">HTTP Request / Response</li>
         <li class="slide">The Browser</li>
         <li class="slide">Markup Languages</li>
-      </ul>
-    </section>
-    <section class="slide">
-      <h2>Web Jargon</h2>
-      <dl>
+    </ul>
+</section>
+<section class="slide">
+    <h2>Web Jargon</h2>
+    <dl>
         <dt class="slide">The Internet</dt>
         <dd>Global computer network - Communication infrastructure</dd>
         <dt class="slide">The World Wide Web</dt>
@@ -61,156 +76,173 @@
         <dd>A computer program that exposes a unique service over a network</dd>
         <dt class="slide">Client</dt>
         <dd>A computer program that consumes a unique service over a network</dd>
-      </dl>
-    </section>
-    <section class="slide">
-      <h2>Servers &amp; Clients</h2>
-      <div class="block">
+    </dl>
+</section>
+<section class="slide">
+    <h2>Servers &amp; Clients</h2>
+
+    <div class="block">
         <p>A server is simply a computer program that provides an information service over a computer network.</p>
-      </div>
-    </section>
-    <section class="slide">
-      <h2>Servers &amp; Clients</h2>
-      <div class="block">
-        <p>A Web server is a computer program that transmits the contents of text and media files over the network using HTTP.</p>
-      </div>
-    </section>
-    <section class="slide">
-      <h2>Servers &amp; Clients</h2>
-      <div class="block">
+    </div>
+</section>
+<section class="slide">
+    <h2>Servers &amp; Clients</h2>
+
+    <div class="block">
+        <p>A Web server is a computer program that transmits the contents of text and media files over the network using
+            HTTP.</p>
+    </div>
+</section>
+<section class="slide">
+    <h2>Servers &amp; Clients</h2>
+
+    <div class="block">
         <p>
-          A Web client is a computer program that can receive (and display)
-           the contents of text and media files over the network using HTTP.
+            A Web client is a computer program that can receive (and display)
+            the contents of text and media files over the network using HTTP.
         </p>
-      </div>
-    </section>
-    <section class="slide">
-      <h2>HTTP life-cycle</h2>
-      <figure><img src="assets/images/web-markup-intro/http-req-res.png"></figure>
-    </section>
-    <section class="slide">
-      <h2>Recap</h2>
-      <h3>Consuming information over the wire</h3>
-      <ul>
+    </div>
+</section>
+<section class="slide">
+    <h2>HTTP life-cycle</h2>
+    <figure><img src="assets/images/web-markup-intro/http-req-res.png"></figure>
+</section>
+<section class="slide">
+    <h2>Recap</h2>
+
+    <h3>Consuming information over the wire</h3>
+    <ul>
         <li class="slide">Internet - The Infrastructure</li>
         <li class="slide">HTTP - The Language / Method</li>
         <li class="slide">Web - The Medium</li>
         <li class="slide">Server - Stores and serves information</li>
         <li class="slide">Client - Retrieves information for consumption</li>
         <li class="slide">Text (HTML), Images, Video, Audio - The Media (Information)</li>
-      </ul>
-    </section>
-    <section class="slide">
-      <h2>Why is this important?</h2>
-      <figure><img src="assets/images/web-markup-intro/darth-vader.png">
+    </ul>
+</section>
+<section class="slide">
+    <h2>Why is this important?</h2>
+    <figure><img src="assets/images/web-markup-intro/darth-vader.png">
         <figcaption>Source: http://www.graphicshunt.com/</figcaption>
-      </figure>
-    </section>
-    <section class="slide">
-      <h1>
+    </figure>
+</section>
+<section class="slide">
+    <h1>
         <div class="subtitle">This is what makes the Web work!</div>
-      </h1>
-    </section>
-    <section class="slide">
-      <h1>Breath Deep</h1>
-    </section>
-    <section class="slide">
-      <h1>
-        <div class="subtitle">Say hello to the</div>Browser
-      </h1>
-    </section>
-    <section class="slide">
-      <h2>The Browser</h2>
-      <ul>
+    </h1>
+</section>
+<section class="slide">
+    <h1>Breath Deep</h1>
+</section>
+<section class="slide">
+    <h1>
+        <div class="subtitle">Say hello to the</div>
+        Browser
+    </h1>
+</section>
+<section class="slide">
+    <h2>The Browser</h2>
+    <ul>
         <li class="slide">Is an HTTP Client</li>
         <li class="slide">Talks to Web Servers (HTTP, Remember?)</li>
         <li class="slide">Can display HTML, Images, Video, Audio, Animation</li>
         <li class="slide">Allows us to consume information over the wire in a platform-independent manner</li>
-      </ul>
-    </section>
-    <section class="slide">
-      <h2>Platform Independence...</h2>
-      <figure><img src="assets/images/web-markup-intro/homer-with-ipad.jpg">
+    </ul>
+</section>
+<section class="slide">
+    <h2>Platform Independence...</h2>
+    <figure><img src="assets/images/web-markup-intro/homer-with-ipad.jpg">
         <figcaption>Source http://ca.news.yahoo.com/blogs/author/marc-saltzman/</figcaption>
-      </figure>
-    </section>
-    <section class="slide">
-      <h1>Markup
+    </figure>
+</section>
+<section class="slide">
+    <h1>Markup
         <div class="subtitle">Achieving platform-independence</div>
-      </h1>
-    </section>
-    <section class="slide">
-      <h2>Markup</h2>
-      <div class="block">Separate content from design.</div>
-      <div class="block">Give content structure and meaning.</div>
-      <div class="block">Let clients decide how to display.</div>
-    </section>
-    <section class="slide">
-      <h2>Markup</h2>
-      <div class="block">
+    </h1>
+</section>
+<section class="slide">
+    <h2>Markup</h2>
+
+    <div class="block">Separate content from design.</div>
+    <div class="block">Give content structure and meaning.</div>
+    <div class="block">Let clients decide how to display.</div>
+</section>
+<section class="slide">
+    <h2>Markup</h2>
+
+    <div class="block">
         <p>Markup is expressed as tags that wrap bits of text.</p>
+
         <p>A tag is like a word that belongs to a special language.</p>
-      </div>
-    </section>
-    <section class="slide">
-      <h2>Markup</h2>
-      <pre><code>&lt;<strong>important</strong>&gt; HTML Rules &lt;/<strong>important</strong>&gt;</code></pre>
-      <pre><code>&lt;<strong>silly</strong>&gt; I like the Simpsons! &lt;/<strong>silly</strong>&gt;</code></pre>
-      <pre><code>&lt;<strong>heading</strong>&gt; Luke, I am your father &lt;/<strong>heading</strong>&gt;</code></pre>
-    </section>
-    <section class="slide">
-      <h2>Markup</h2>
-      <div class="block">
+    </div>
+</section>
+<section class="slide">
+    <h2>Markup</h2>
+    <pre><code>&lt;<strong>important</strong>&gt; HTML Rules &lt;/<strong>important</strong>&gt;</code></pre>
+    <pre><code>&lt;<strong>silly</strong>&gt; I like the Simpsons! &lt;/<strong>silly</strong>&gt;</code></pre>
+    <pre><code>&lt;<strong>heading</strong>&gt; Luke, I am your father &lt;/<strong>heading</strong>&gt;</code></pre>
+</section>
+<section class="slide">
+    <h2>Markup</h2>
+
+    <div class="block">
         <p>HTML is a Markup language</p>
+
         <p>It's a collection of tags, used to express structure and context of text documents.</p>
-      </div>
-    </section>
-    <section class="slide">
-      <h1>Register
+    </div>
+</section>
+<section class="slide">
+    <h1>Register
         <div class="subtitle">bit.ly/OpenAcademy</div>
-      </h1>
-    </section>
-    <section class="slide">
-      <h1>Break
+    </h1>
+</section>
+<section class="slide">
+    <h1>Break
         <div class="subtitle">and then.... some live HTML coding</div>
-      </h1>
-    </section><a href="#" title="Previous" class="deck-prev-link">&#8592;</a><a href="#" title="Next" class="deck-next-link">&#8594;</a>
-    <p class="deck-status"><span class="deck-status-current"></span>/<span class="deck-status-total"></span></p>
-    <form action="../" method="get" class="goto-form">
-      <label for="goto-slide">Go to slide:</label>
-      <input id="goto-slide" type="text" name="slidenum" list="goto-datalist">
-      <datalist id="goto-datalist"></datalist>
-      <input type="submit" value="Go">
-    </form><a href="../" title="Permalink to this slide" class="deck-permalink">#</a>
-    <div id="clock"><span id="clock-time"></span><a id="toggle-clock"></a></div>
-    <script src="./deckjs/jquery-1.7.2.min.js"></script>
-    <script src="./deckjs/core/deck.core.js"></script>
-    <script src="./deckjs/core/deck.core.js"></script>
-    <script src="./deckjs/extensions/hash/deck.hash.js"></script>
-    <script src="./deckjs/extensions/menu/deck.menu.js"></script>
-    <script src="./deckjs/extensions/goto/deck.goto.js"></script>
-    <script src="./deckjs/extensions/status/deck.status.js"></script>
-    <script src="./deckjs/extensions/navigation/deck.navigation.js"></script>
-    <script src="./deckjs/extensions/scale/deck.scale.js"></script>
-    <script src="./deckjs/plugins/codemirror/codemirror.js"></script>
-    <script src="./deckjs/plugins/codemirror/mode/javascript/javascript.js"></script>
-    <script src="./deckjs/plugins/codemirror/deck.codemirror.js"></script>
-    <script src="./deckjs/plugins/clock/deck.clock.js"></script>
-    <script>
-      $(function() {
+    </h1>
+</section>
+<a href="#" title="Previous" class="deck-prev-link">&#8592;</a><a href="#" title="Next" class="deck-next-link">
+    &#8594;</a>
+
+<p class="deck-status"><span class="deck-status-current"></span>/<span class="deck-status-total"></span></p>
+
+<form action="../" method="get" class="goto-form">
+    <label for="goto-slide">Go to slide:</label>
+    <input id="goto-slide" type="text" name="slidenum" list="goto-datalist">
+    <datalist id="goto-datalist"></datalist>
+    <input type="submit" value="Go">
+</form>
+<a href="../" title="Permalink to this slide" class="deck-permalink">#</a>
+
+<div id="clock"><span id="clock-time"></span><a id="toggle-clock"></a></div>
+<script src="./deckjs/jquery-1.7.2.min.js"></script>
+<script src="./deckjs/core/deck.core.js"></script>
+<script src="./deckjs/core/deck.core.js"></script>
+<script src="./deckjs/extensions/hash/deck.hash.js"></script>
+<script src="./deckjs/extensions/menu/deck.menu.js"></script>
+<script src="./deckjs/extensions/goto/deck.goto.js"></script>
+<script src="./deckjs/extensions/status/deck.status.js"></script>
+<script src="./deckjs/extensions/navigation/deck.navigation.js"></script>
+<script src="./deckjs/extensions/scale/deck.scale.js"></script>
+<script src="./deckjs/plugins/codemirror/codemirror.js"></script>
+<script src="./deckjs/plugins/codemirror/mode/javascript/javascript.js"></script>
+<script src="./deckjs/plugins/codemirror/deck.codemirror.js"></script>
+<script src="./deckjs/plugins/clock/deck.clock.js"></script>
+<script>
+    $(function () {
         $.deck('.slide', {
-          codemirror: {
-            lineNumbers: true,
-            theme: "elegant",
-            indentUnit: 2,
-            indentWithTabs: false,
-            runnable: false
-          },
-          clock: {
-            enable: true
-          }
+            codemirror: {
+                lineNumbers   : true,
+                theme         : "elegant",
+                indentUnit    : 2,
+                indentWithTabs: false,
+                runnable      : false
+            },
+            clock     : {
+                enable: true
+            }
         });
-      });
-    </script>
-  </body>
+    });
+</script>
+</body>
 </html>
