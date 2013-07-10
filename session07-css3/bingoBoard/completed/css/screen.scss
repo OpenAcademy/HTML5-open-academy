@@ -1,0 +1,73 @@
+/**
+** style definition for the Bingo board
+**/
+
+@font-face {
+  font-family: "hobo-std";
+  src: url('BingoFont.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  font-family: hobo-std, serif;
+}
+
+body, html {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: 80%;
+}
+
+.bingoBoard {
+  font-size: 20px;
+  border: 3px solid #ecf0f1;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin: 0 auto;
+
+  tr {
+
+    td, th {
+      background-size: 2px 2px;
+      padding: 10px;
+      box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.75);
+      border: 2px solid transparent;
+      border-radius: 15px;
+    }
+
+    th {
+      font-weight: bold;
+      background: #3498db;
+    }
+
+    td {
+      cursor: pointer;
+      -webkit-transition: all 1s;
+
+      &:hover, &.selected {
+        color: #FFFF00;
+        background: #000000;
+        border: 2px solid #282828;
+        box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.75);
+      }
+
+      // Mark completed row
+      &.completedRow, &.completedColumn {
+        background: #FF3300;
+      }
+
+    }
+
+    // Disable the central number
+    &:nth-of-type(4) td:nth-of-type(3) {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+  }
+}

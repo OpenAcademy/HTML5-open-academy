@@ -257,7 +257,7 @@
 
     a {
       &, &:hover, &:focus, &:active, &:visited {
-        color: #599;
+        color: #33435C;
         text-decoration: none;
       }
 
@@ -268,7 +268,7 @@
 
     figcaption {
       text-align: center;
-      font-size: 0.6em;
+      font-size: 0.7em;
     }
 
     dl {
@@ -343,7 +343,7 @@
     position: fixed;
     z-index: 10;
     left: 10px;
-    bottom: 10px;
+    top: 10px;
     font-size: 0.7em;
 
     #clock-time {

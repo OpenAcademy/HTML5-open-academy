@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            padding: 20px;
+            margin : 0 auto;
+        }
+
+        .hpLogo {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background: #0397D7;
+            text-align: center;
+            position: relative;
+            float: left;
+            margin: 20px;
+
+        }
+
+        .h-left {
+            width: 6px;
+            height: 47px;
+            background: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 16px;
+            -webkit-transform: skew(-16deg);
+        }
+
+        .h-right {
+            width: 6px;
+            height: 23px;
+            background: transparent;
+            border-top: 5px solid white;
+            border-right: 6px solid white;
+            border-radius: 0 6px 0 0;
+            position: absolute;
+            top: 19px;
+            left: 18px;
+            -webkit-transform: skew(-16deg);
+        }
+
+        .p-right {
+            width: 0;
+            height: 43px;
+            background: transparent;
+            border-right: 6px solid white;
+            position: absolute;
+            top: 19px;
+            bottom: 0;
+            right: 22px;
+            -webkit-transform: skew(-16deg);
+        }
+
+        .p-left {
+            width: 6px;
+            height: 20px;
+            background: transparent;
+            border-top: 4px solid white;
+            border-bottom: 4px solid white;
+            border-right: 6px solid white;
+            border-radius: 0 6px 6px 0;
+            position: absolute;
+            top: 19px;
+            right: 9px;
+            -webkit-transform: skew(-16deg);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="hpLogo">
+        <div class="h-left"></div>
+        <div class="h-right"></div>
+        <div class="p-right"></div>
+        <div class="p-left"></div>
+
+    </div>
+    <br/>
+    <img src="hp.png">
+</div>
+
+</body>
+</html>

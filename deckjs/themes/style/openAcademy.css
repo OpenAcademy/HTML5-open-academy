@@ -54,12 +54,12 @@
   /* ie8 */
   padding: 5px;
 }
-/* line 54, openAcademy.scss */
+/* line 55, openAcademy.scss */
 .logos.inline img + img {
   margin-left: 10px;
 }
 
-/* line 59, openAcademy.scss */
+/* line 60, openAcademy.scss */
 .deck-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.75em;
@@ -72,59 +72,59 @@
   background-attachment: fixed;
   width: 960px;
 }
-/* line 67, openAcademy.scss */
+/* line 68, openAcademy.scss */
 .deck-container::after {
   background-image: url("../../images/isoc-left.png"), url("../../images/isoc-right.png");
 }
-/* line 71, openAcademy.scss */
+/* line 72, openAcademy.scss */
 .deck-container > .slide {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
-/* line 74, openAcademy.scss */
+/* line 75, openAcademy.scss */
 .deck-container > .slide .deck-before, .deck-container > .slide .deck-previous {
   opacity: 0.4;
 }
-/* line 78, openAcademy.scss */
+/* line 79, openAcademy.scss */
 .deck-container > .slide .deck-before:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-before:not(.deck-child-current) .deck-previous, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-previous {
   opacity: 1;
 }
-/* line 84, openAcademy.scss */
+/* line 85, openAcademy.scss */
 .deck-container > .slide .deck-child-current {
   opacity: 1;
 }
-/* line 91, openAcademy.scss */
+/* line 92, openAcademy.scss */
 .deck-container .slide h1, .deck-container .slide h2, .deck-container .slide h3, .deck-container .slide h4, .deck-container .slide h5, .deck-container .slide h6 {
   font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
-/* line 95, openAcademy.scss */
+/* line 96, openAcademy.scss */
 .deck-container .slide h1 {
   color: #08455f;
 }
-/* line 98, openAcademy.scss */
+/* line 99, openAcademy.scss */
 .deck-container .slide h1 .subtitle {
   font-size: 0.5em;
 }
-/* line 100, openAcademy.scss */
+/* line 101, openAcademy.scss */
 .deck-container .slide h1 .subtitle.small {
   margin-top: 15px;
   font-size: 0.35em;
 }
-/* line 107, openAcademy.scss */
+/* line 108, openAcademy.scss */
 .deck-container .slide h2 {
   color: #0b7495;
   border-bottom: 0;
 }
-/* line 115, openAcademy.scss */
+/* line 116, openAcademy.scss */
 .cssreflections .deck-container .slide h2 {
   line-height: 1;
   -webkit-box-reflect: below -0.5555em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, 0.1)), to(transparent));
   -moz-box-reflect: below -0.5555em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.3) 100%);
 }
-/* line 122, openAcademy.scss */
+/* line 123, openAcademy.scss */
 .deck-container .slide h3 {
   color: #000;
 }
-/* line 126, openAcademy.scss */
+/* line 127, openAcademy.scss */
 .deck-container .slide pre {
   border-color: #cde;
   background: #fff;
@@ -132,7 +132,7 @@
   z-index: auto;
   /* http://nicolasgallagher.com/css-drop-shadows-without-images/ */
 }
-/* line 132, openAcademy.scss */
+/* line 133, openAcademy.scss */
 .borderradius .deck-container .slide pre {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -140,7 +140,7 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 138, openAcademy.scss */
+/* line 139, openAcademy.scss */
 .csstransforms.boxshadow .deck-container .slide pre > :first-child:before {
   content: "";
   position: absolute;
@@ -151,7 +151,7 @@
   left: 0;
   right: 0;
 }
-/* line 149, openAcademy.scss */
+/* line 150, openAcademy.scss */
 .csstransforms.boxshadow .deck-container .slide pre:before, .csstransforms.boxshadow .deck-container .slide pre:after {
   content: "";
   position: absolute;
@@ -164,7 +164,7 @@
   -moz-box-shadow: 0, 15px, 10px, rgba(0, 0, 0, 0.7);
   box-shadow: 0, 15px, 10px, rgba(0, 0, 0, 0.7);
 }
-/* line 160, openAcademy.scss */
+/* line 161, openAcademy.scss */
 .csstransforms.boxshadow .deck-container .slide pre:before {
   left: 10px;
   -webkit-transform: rotate(-3deg);
@@ -173,7 +173,7 @@
   -o-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
-/* line 165, openAcademy.scss */
+/* line 166, openAcademy.scss */
 .csstransforms.boxshadow .deck-container .slide pre:after {
   right: 10px;
   -webkit-transform: rotate(3deg);
@@ -182,11 +182,11 @@
   -o-transform: rotate(3deg);
   transform: rotate(3deg);
 }
-/* line 172, openAcademy.scss */
+/* line 173, openAcademy.scss */
 .deck-container .slide code {
   color: #789;
 }
-/* line 176, openAcademy.scss */
+/* line 177, openAcademy.scss */
 .deck-container .slide blockquote {
   font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-size: 2em;
@@ -197,7 +197,7 @@
   border: 1px solid #cde;
   z-index: auto;
 }
-/* line 186, openAcademy.scss */
+/* line 187, openAcademy.scss */
 .borderradius .deck-container .slide blockquote {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -205,7 +205,7 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 191, openAcademy.scss */
+/* line 192, openAcademy.scss */
 .boxshadow .deck-container .slide blockquote > :first-child:before {
   content: "";
   position: absolute;
@@ -216,7 +216,7 @@
   left: 0;
   right: 0;
 }
-/* line 202, openAcademy.scss */
+/* line 203, openAcademy.scss */
 .boxshadow .deck-container .slide blockquote:after {
   content: "";
   position: absolute;
@@ -231,18 +231,18 @@
   -moz-box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
   box-shadow: 0, 0, 15px, rgba(0, 0, 0, 0.6);
 }
-/* line 216, openAcademy.scss */
+/* line 217, openAcademy.scss */
 .deck-container .slide blockquote p {
   margin: 0;
 }
-/* line 220, openAcademy.scss */
+/* line 221, openAcademy.scss */
 .deck-container .slide blockquote cite {
   font-size: .5em;
   font-style: normal;
   font-weight: bold;
   color: #888;
 }
-/* line 227, openAcademy.scss */
+/* line 228, openAcademy.scss */
 .deck-container .slide blockquote:before {
   content: "“";
   position: absolute;
@@ -253,7 +253,7 @@
   color: #ccf0f0;
   z-index: 1;
 }
-/* line 239, openAcademy.scss */
+/* line 240, openAcademy.scss */
 .deck-container .slide .block {
   font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-size: 2em;
@@ -262,39 +262,39 @@
   position: relative;
   z-index: auto;
 }
-/* line 248, openAcademy.scss */
+/* line 249, openAcademy.scss */
 .deck-container .slide ::-moz-selection {
   background: #08455f;
   color: #fff;
 }
-/* line 252, openAcademy.scss */
+/* line 253, openAcademy.scss */
 .deck-container .slide ::selection {
   background: #08455f;
   color: #fff;
 }
-/* line 258, openAcademy.scss */
+/* line 259, openAcademy.scss */
 .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited {
-  color: #599;
+  color: #33435C;
   text-decoration: none;
 }
-/* line 263, openAcademy.scss */
+/* line 264, openAcademy.scss */
 .deck-container .slide a:hover, .deck-container .slide a:focus {
   text-decoration: underline;
 }
-/* line 268, openAcademy.scss */
+/* line 269, openAcademy.scss */
 .deck-container .slide figcaption {
   text-align: center;
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
-/* line 274, openAcademy.scss */
+/* line 275, openAcademy.scss */
 .deck-container .slide dl dt {
   font-weight: bold;
 }
-/* line 277, openAcademy.scss */
+/* line 278, openAcademy.scss */
 .deck-container .slide dl dt.deck-previous + dd, .deck-container .slide dl dt.deck-before + dd {
   opacity: 0.4;
 }
-/* line 281, openAcademy.scss */
+/* line 282, openAcademy.scss */
 .deck-container .slide dl dt.deck-current + dd {
   opacity: 1;
   -webkit-transition-delay: 0.3s;
@@ -302,7 +302,7 @@
   -o-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 286, openAcademy.scss */
+/* line 287, openAcademy.scss */
 .deck-container .slide dl dd {
   margin-left: 35px;
   opacity: 0;
@@ -315,29 +315,29 @@
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-/* line 291, openAcademy.scss */
+/* line 292, openAcademy.scss */
 .deck-container .slide dl dd + dt {
   margin-top: 15px;
 }
-/* line 298, openAcademy.scss */
+/* line 299, openAcademy.scss */
 .deck-container .deck-prev-link, .deck-container .deck-next-link {
   background: #fff;
   opacity: 0.5;
 }
-/* line 302, openAcademy.scss */
+/* line 303, openAcademy.scss */
 .deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
   color: #599;
 }
-/* line 306, openAcademy.scss */
+/* line 307, openAcademy.scss */
 .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
   opacity: 1;
   text-decoration: none;
 }
-/* line 312, openAcademy.scss */
+/* line 313, openAcademy.scss */
 .deck-container .deck-status {
   font-size: 0.6666em;
 }
-/* line 317, openAcademy.scss */
+/* line 318, openAcademy.scss */
 .deck-container.deck-menu .slide {
   background: transparent;
   -webkit-border-radius: 5px;
@@ -346,15 +346,15 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 321, openAcademy.scss */
+/* line 322, openAcademy.scss */
 .rgba .deck-container.deck-menu .slide {
   background: rgba(0, 0, 0, 0.1);
 }
-/* line 325, openAcademy.scss */
+/* line 326, openAcademy.scss */
 .deck-container.deck-menu .slide.deck-current, .rgba .deck-container.deck-menu .slide.deck-current, .no-touch .deck-container.deck-menu .slide:hover {
   background: #fff;
 }
-/* line 331, openAcademy.scss */
+/* line 332, openAcademy.scss */
 .deck-container .goto-form {
   background: #fff;
   border: 1px solid #cde;
@@ -364,26 +364,26 @@
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 336, openAcademy.scss */
+/* line 337, openAcademy.scss */
 .boxshadow .deck-container .goto-form {
   -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-/* line 341, openAcademy.scss */
+/* line 342, openAcademy.scss */
 .deck-container #clock {
   position: fixed;
   z-index: 10;
   left: 10px;
-  bottom: 10px;
+  top: 10px;
   font-size: 0.7em;
 }
-/* line 348, openAcademy.scss */
+/* line 349, openAcademy.scss */
 .deck-container #clock #clock-time {
   display: inline-block;
   line-height: 0.3;
 }
-/* line 353, openAcademy.scss */
+/* line 354, openAcademy.scss */
 .deck-container #clock #toggle-clock {
   display: inline-block;
   cursor: pointer;
