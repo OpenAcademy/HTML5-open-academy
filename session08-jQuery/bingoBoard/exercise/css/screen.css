@@ -1,0 +1,45 @@
+@font-face {
+    /** Import your font here */
+}
+
+body, html {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.bingoBoard {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.bingoBoard tr th {
+
+}
+
+/**
+** Here we have the transition that we did not learned today
+*/
+.bingoBoard tr td {
+    cursor: pointer;
+    -webkit-transition: all 1s;
+}
+
+.bingoBoard tr td:hover, .bingoBoard tr td.selected {
+
+}
+
+.bingoBoard tr td.completedRow, .bingoBoard tr td.completedColumn {
+
+}
+
+/**
+** Center number.
+** sample of css3 selectors
+**/
+.bingoBoard tr:nth-of-type(4) td:nth-of-type(3) {
+    opacity: 0;
+    pointer-events: none;
+}

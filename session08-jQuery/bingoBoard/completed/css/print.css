@@ -1,0 +1,60 @@
+/* line 1, print.scss */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  word-spacing: 1px;
+  letter-spacing: 0.2px;
+  font: 13px Arial, Helvetica, "Lucida Grande", serif;
+  color: #000;
+}
+
+/**
+** style definition for the Bingo board
+**/
+@font-face {
+  font-family: "hobo-std";
+  src: url("BingoFont.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 23, print.scss */
+* {
+  font-family: hobo-std, serif;
+}
+
+/* line 27, print.scss */
+.bingoBoard {
+  font-size: 20px;
+  border: 3px solid #ecf0f1;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 0 auto;
+}
+/* line 36, print.scss */
+.bingoBoard tr td, .bingoBoard tr th {
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+}
+/* line 42, print.scss */
+.bingoBoard tr th {
+  font-weight: bold;
+  background: #3498db;
+}
+/* line 49, print.scss */
+.bingoBoard tr td.selected {
+  color: #FFFF00;
+  background: #000000;
+  border: 2px solid #282828;
+}
+/* line 56, print.scss */
+.bingoBoard tr td.completedRow, .bingoBoard tr td.completedColumn {
+  background: #FF3300;
+}
+/* line 63, print.scss */
+.bingoBoard tr:nth-of-type(4) td:nth-of-type(3) {
+  opacity: 0;
+  pointer-events: none;
+}
