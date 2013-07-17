@@ -227,4 +227,41 @@
 }
 
 
+/* Ronny's additions */
+
+.deck-container div {
+	font-size: 36px;
+}
+
+.center {
+	text-align: center;
+}
+
+.images-block img {
+	display: inline;
+	vertical-align: top;
+	margin: 0 15px;
+}
+
+#worst-apis ul {
+	list-style: none;
+}
+
+#worst-apis li {
+	position: relative;
+	display: block;
+	float: left;
+	width: 45%;
+	height: 230px;
+	line-height: 230px;
+	text-align: center;
+	margin: 15px;
+	background: #CA1D00;
+	color: #fff;
+	font-size: 180%;
+}
+
+#worst-apis li:nth-child(3) {
+	clear: left;
+}
 

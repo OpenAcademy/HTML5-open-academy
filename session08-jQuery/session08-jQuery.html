@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../deckjs/extensions/scale/deck.scale.css">
     <link rel="stylesheet" href="../deckjs/themes/style/openAcademy.css">
     <link rel="stylesheet" href="../deckjs/themes/transition/horizontal-slide.css">
+	<link rel="stylesheet" href="../deckjs/plugins/codemirror/deck.codemirror.css">
+	<link rel="stylesheet" href="../deckjs/plugins/codemirror/themes/elegant.css">
     <link rel="stylesheet" href="css/session08.css">
     <script src="../deckjs/modernizr.custom.js"></script>
 
@@ -81,7 +83,7 @@
     <p>On top of that, some browser APIs are too verbose and complicated for us mortals.</p>
 </section>
 
-<section class="slide">
+<section class="slide" id="worst-apis">
 	<h2>Meet the worst</h2>
 	<ul>
 		<li>DOM</li>
@@ -93,16 +95,47 @@
 
 
 <section class="slide">
-    <h2>Whats have we missed?</h2>
-    <ul>
-        <li>Gradients</li>
-        <li>2D Transforms</li>
-        <li>3D Transforms</li>
-        <li>Transitions</li>
-        <li>Animation</li>
-        <li>Layout</li>
-        <li>Multiple Columns</li>
-        <li>User Interface</li>
+    <h2>Something must be done!</h2>
+	<div class="slide">
+		<h3>Yeah, well... Meet jQuery.</h3>
+		<img src="images/logo-jquery.png" alt="jQuery logo"/>
+		<p>A rich, powerful JavaScript library, intended to simplify common tasks in the browser.</p>
+	</div>
+</section>
+
+<section class="slide">
+    <h2>A bit of history</h2>
+	<p class="slide">Created by <strong>John Resig</strong> in 2006</p>
+	<p class="slide">Free and open source, active thanks to a huge active community.</p>
+	<p class="slide">It's the most widespread JS library in use today. over 60% of the top 10,000 sites use jQuery.</p>
+	<div class="slide">
+	<p>There <strong>are</strong> other, good libraries which do a similar job. Some of them are:</p>
+		<div class="center images-block">
+			<img src="images/mootools.png" alt="Mootools Logo"/>
+			<img src="images//yui-logo.png" alt=YUI Logo"/>
+		</div>
+	</div>
+</section>
+
+<section class="slide">
+    <h2>jQuery &mdash; The Important Parts</h2>
+	<ul class="slide">
+		<li>DOM</li>
+		<li>Events</li>
+		<li>AJAX</li>
+		<li>Animations</li>
+		<li>Lots more, Let's dive in</li>
+    </ul>
+</section>
+
+<section class="slide">
+    <h2>First Use</h2>
+	<ul>
+		<li>Just add one script tag:</li>
+		<p class="deck-codemirror"><code class="inlineCode codemirror-item">&lt;script src="http://code.jquery.com/jquery-latest.min.js">&lt;/script></code></p>
+		<li class="slide">Now you can use <code class="inlineCode">jQuery</code>, or the shorthand <code class="inlineCode">$</code></li>
+		<li class="slide">For example: <code>$('h2').fadeOut();</code></li>
+		<li class="slide">Lots more, Let's dive in</li>
     </ul>
 </section>
 
@@ -114,6 +147,9 @@
 <script src="../deckjs/extensions/hash/deck.hash.js"></script>
 <script src="../deckjs/extensions/menu/deck.menu.js"></script>
 <script src="../deckjs/extensions/goto/deck.goto.js"></script>
+<script src="../deckjs/plugins/codemirror/codemirror.js"></script>
+<script src="../deckjs/plugins/codemirror/mode/javascript/javascript.js"></script>
+<script src="../deckjs/plugins/codemirror/deck.codemirror.js"></script>
 <script src="../deckjs/extensions/navigation/deck.navigation.js"></script>
 <script src="../deckjs/extensions/scale/deck.scale.js"></script>
 
