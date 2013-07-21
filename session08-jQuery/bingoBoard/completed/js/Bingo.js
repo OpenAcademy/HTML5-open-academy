@@ -25,16 +25,16 @@ var Bingo = function () {
             completed = true;
 
         // Loop over the items and check to see if all of them are selected or not
-        for (index = 0; index < size; index++) {
-            if (!obj.items[index].classList.contains('selected')) {
+        $.each(obj.items, function(index, item){
+            if (!$(item).hasClass('selected')) {
                 completed = false;
-                break;
+                return false;
             }
-        }
+        });
 
-        for (index = 0; index < size; index++) {
-            obj.items[index].classList[completed ? 'add' : 'remove'](obj.className);
-        }
+        $.each(obj.items, function(index, item){
+            $(item)[completed ? 'addClass' : 'removeClass'](obj.className);
+        });
     }
 
     /**
@@ -45,27 +45,27 @@ var Bingo = function () {
 
         // Get the cell
         var index,
-            cell = e.srcElement,
+            cell = e.target,
             cells;
 
         // Toggle the clicked cell state
-        cell.classList.toggle('selected');
+        $(cell).toggleClass('selected');
 
         // Check to see if we have completed full line or not
         toggleCompelte({
-            items    : document.querySelectorAll('[data-row="' + cell.dataset['row'] + '"]'),
+            items    : $('[data-row="' + cell.dataset['row'] + '"]'),
             className: 'completedRow'
         });
 
         // Check for complete column
         toggleCompelte({
-            items    : document.querySelectorAll('[data-col="' + cell.dataset['col'] + '"]'),
+            items    : $('[data-col="' + cell.dataset['col'] + '"]'),
             className: 'completedColumn'
         });
 
     }
 
-    return{
+    return {
 
         /**
          * Init the board and add the events
@@ -74,26 +74,22 @@ var Bingo = function () {
 
             // Find all the cells and process them
             var
-                cells = document.querySelectorAll('.bingoBoard td'),
+                cells = $('.bingoBoard td'),
                 index, cell;
 
             // Get the number of cells = Board size
             size = Math.sqrt(cells.length);
 
             // Loop over each cell and do the "Magic" :-)
-            for (index = 0; index < cells.length; index++) {
-
-                // Get the current cell
-                cell = cells[index];
-
-                // Attach the events to the cell
-                cell.addEventListener('click', toggleSelection);
+            cells.on('click', toggleSelection).each(function(index, cell){
 
                 // Add the row/cols attribute to each cell
-                cell.dataset['row'] = parseInt(index / size) + 1;
-                cell.dataset['col'] = (index % size) + 1;
+                $(cell).attr({
+                    'data-row': parseInt(index / size) + 1,
+                    'data-col': (index % size) + 1
+                });
 
-            }
+            });
         }
     }
 }();
