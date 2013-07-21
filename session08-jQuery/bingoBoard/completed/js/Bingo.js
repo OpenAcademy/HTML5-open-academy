@@ -65,6 +65,21 @@ var Bingo = function () {
 
     }
 
+    var chosenNumbers = [],
+        topNumber = 25;
+
+    function generateRandom(){
+        return Math.round(Math.random() * (topNumber - 1)) + 1;
+    }
+
+    function getRandomNumber(){
+        var newNumber;
+        do (newNumber = generateRandom())  
+        while (chosenNumbers.indexOf(newNumber) > -1);
+        chosenNumbers.push(newNumber);
+        return newNumber;
+    }
+
     return {
 
         /**
@@ -77,14 +92,15 @@ var Bingo = function () {
                 cells = $('.bingoBoard td'),
                 index, cell;
 
+
             // Get the number of cells = Board size
             size = Math.sqrt(cells.length);
 
             // Loop over each cell and do the "Magic" :-)
             cells.on('click', toggleSelection).each(function(index, cell){
-
+                var newNumber = getRandomNumber();
                 // Add the row/cols attribute to each cell
-                $(cell).attr({
+                $(cell).text(newNumber).attr({
                     'data-row': parseInt(index / size) + 1,
                     'data-col': (index % size) + 1
                 });
