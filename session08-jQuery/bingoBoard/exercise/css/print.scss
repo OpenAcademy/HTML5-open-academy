@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  word-spacing: 1px;
+  letter-spacing: 0.2px;
+  font: 13px Arial, Helvetica, "Lucida Grande", serif;
+  color: #000;
+}
+
+
+/**
+** style definition for the Bingo board
+**/
+
+@font-face {
+  font-family: "hobo-std";
+  src: url('BingoFont.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  font-family: hobo-std, serif;
+}
+
+.bingoBoard {
+  font-size: 20px;
+  border: 3px solid #ecf0f1;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 0 auto;
+
+  tr {
+
+    td, th {
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 15px;
+    }
+
+    th {
+      font-weight: bold;
+      background: #3498db;
+    }
+
+    td {
+
+      &.selected {
+        color: #FFFF00;
+        background: #000000;
+        border: 2px solid #282828;
+      }
+
+      // Mark completed row
+      &.completedRow, &.completedColumn {
+        background: #FF3300;
+      }
+
+    }
+
+    // Disable the central number
+    &:nth-of-type(4) td:nth-of-type(3) {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+  }
+}

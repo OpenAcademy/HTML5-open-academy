@@ -1,6 +1,6 @@
 /**
  ** This file contain the script for the bingo board.
- ** @author Nir Geier, Ronny Orbach
+ ** @author Nir Geier
  **/
 var Bingo = function () {
 
@@ -99,4 +99,5 @@ var Bingo = function () {
 }();
 
 // Wait for the page to load and then build the board.
-$(Bingo.initBoard);
+document.addEventListener("DOMContentLoaded", Bingo.initBoard, false);
+
