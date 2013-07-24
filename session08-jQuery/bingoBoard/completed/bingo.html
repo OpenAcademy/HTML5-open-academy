@@ -78,16 +78,28 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.jSlots.min.js"></script>
     <script>
-        // normal example
-        console.log( $('.slot') );
+
+        function random(min, max){
+            return min + Math.floor(Math.random() * (max - min + 1));
+        }
+
+        function highlightChosen(number){
+            console.log(number);
+            var matchingCell = $('.bingoBoard td:contains(' + number + ')');
+            matchingCell.trigger('bingoSelect');
+        }
+
         $('.slot').jSlots({
             spinner : '#playNormal',
             number: 2,
+            spins: 5,
+            time: 4000,
             onEnd: function(finalNumbers){
                 $.each(finalNumbers, function(index, num){
                     if(num === 10) finalNumbers[index] = 0;
                 });
-                console.log(finalNumbers.join(''));
+                var chosenNumber = finalNumbers.join('');
+                highlightChosen(chosenNumber);
             }
         });
   

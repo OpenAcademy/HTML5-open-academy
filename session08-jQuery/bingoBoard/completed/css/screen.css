@@ -47,7 +47,6 @@ body, html {
 }
 /* line 48, screen.scss */
 .bingoBoard tr td {
-  cursor: pointer;
   -webkit-transition: all 1s;
 }
 /* line 52, screen.scss */

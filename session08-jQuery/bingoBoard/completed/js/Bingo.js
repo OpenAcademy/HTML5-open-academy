@@ -66,15 +66,11 @@ var Bingo = function () {
     }
 
     var chosenNumbers = [],
-        topNumber = 99;
-
-    function generateRandom(){
-        return Math.round(Math.random() * (topNumber - 1)) + 1;
-    }
+        topNumber = 25;
 
     function getRandomNumber(){
         var newNumber;
-        do (newNumber = generateRandom())  
+        do (newNumber = random(0, topNumber))  
         while (chosenNumbers.indexOf(newNumber) > -1);
         chosenNumbers.push(newNumber);
         return newNumber;
@@ -97,7 +93,7 @@ var Bingo = function () {
             size = Math.sqrt(cells.length);
 
             // Loop over each cell and do the "Magic" :-)
-            cells.on('click', toggleSelection).each(function(index, cell){
+            cells.on('bingoSelect', toggleSelection).each(function(index, cell){
                 var newNumber = getRandomNumber();
                 if(newNumber < 10) newNumber = '0' + newNumber;
                 // Add the row/cols attribute to each cell
