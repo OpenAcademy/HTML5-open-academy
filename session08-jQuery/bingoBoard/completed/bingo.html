@@ -92,8 +92,8 @@
         $('.slot').jSlots({
             spinner : '#playNormal',
             number: 2,
-            spins: 5,
-            time: 4000,
+            spins: random(3,9),
+            time: random(1000,5000),
             onEnd: function(finalNumbers){
                 $.each(finalNumbers, function(index, num){
                     if(num === 10) finalNumbers[index] = 0;

@@ -76,24 +76,34 @@ ul {
 
 .slotMachine {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 50px;
+  left: 40px;
 }
 
 #playNormal {
   padding: 10px 14px;
   display: block;
   width: 100%;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .jSlots-wrapper {
     overflow: hidden;
-    height: 82px;
+    height: 95px;
     display: inline-block; /* to size correctly, can use float too, or width*/
     border: 1px solid #999;
+    -webkit-box-shadow: 0 15px 30px -15px rgba(0,0,0,0.6) inset, 0 -15px 30px -15px rgba(0,0,0,0.6) inset;
+    -moz-box-shadow: 0 15px 30px -15px rgba(0,0,0,0.6) inset, 0 -15px 30px -15px rgba(0,0,0,0.6) inset;
+    box-shadow: 0 15px 30px -15px rgba(0,0,0,0.6) inset, 0 -15px 30px -15px rgba(0,0,0,0.6) inset;
+}
+
+.slot:first-child {
+  border-right: 2px solid rgba(0,0,0,0.5);
 }
 
 .slot {
     float: left;
     font-size: 72px;
+    padding: 2px 17px;
 }
