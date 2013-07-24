@@ -66,7 +66,7 @@ var Bingo = function () {
     }
 
     var chosenNumbers = [],
-        topNumber = 25;
+        topNumber = 99;
 
     function generateRandom(){
         return Math.round(Math.random() * (topNumber - 1)) + 1;
@@ -99,6 +99,7 @@ var Bingo = function () {
             // Loop over each cell and do the "Magic" :-)
             cells.on('click', toggleSelection).each(function(index, cell){
                 var newNumber = getRandomNumber();
+                if(newNumber < 10) newNumber = '0' + newNumber;
                 // Add the row/cols attribute to each cell
                 $(cell).text(newNumber).attr({
                     'data-row': parseInt(index / size) + 1,

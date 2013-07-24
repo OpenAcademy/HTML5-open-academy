@@ -66,3 +66,35 @@ body, html {
   opacity: 0;
   pointer-events: none;
 }
+
+
+/* Slot Machine */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.slotMachine {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#playNormal {
+  padding: 10px 14px;
+  display: block;
+  width: 100%;
+}
+
+.jSlots-wrapper {
+    overflow: hidden;
+    height: 82px;
+    display: inline-block; /* to size correctly, can use float too, or width*/
+    border: 1px solid #999;
+}
+
+.slot {
+    float: left;
+    font-size: 72px;
+}
